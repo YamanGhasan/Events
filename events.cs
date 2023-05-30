@@ -1,5 +1,5 @@
 
-// events between 2classes without UI
+// events between 2 classes without UI
 using system;
 
 namespace events
