@@ -20,7 +20,8 @@ namespace events
             stock.OnPriceChanged -= Stock_OnPriceChanged; // Unsubscribe from the OnPriceChanged event
         }
 
-        private static void Stock_OnPriceChanged(Stock stock, decimal oldPrice) // Method to call when event is published
+        private static void Stock_OnPriceChanged(Stock stock, decimal oldPrice) // Method to call when event is published  --  this is the event handler 
+         //it is the method that gets called when the OnPriceChanged event is raised
         {
             string result = "";
             if (stock.Price > oldPrice)
