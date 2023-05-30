@@ -4,7 +4,7 @@ using system;
 
 namespace events
 {
-class program //subscriber 
+class program //subscriber  // recive or handle the event 
   {
          static void Main(string[] args)
             {
@@ -52,12 +52,12 @@ class program //subscriber
   
   public delegate void stockPriceChangeHandler(stock stock ,decimal oldPrice);  // Delegate for handling stock price changes
   
-public class Stock   //publisher 
+public class Stock   //publisher who raises the event 
      { 
      private string name;
      private decimal price;
      
-     public event stockPriceChangeHandler OnPriceChanged; //// Event triggered when the stock price changes
+     public event stockPriceChangeHandler OnPriceChanged; // Event triggered when the stock price changes
 
   
      public string Name =>this.name;        //get property Name 
@@ -79,7 +79,7 @@ public class Stock   //publisher
     
     if (OnPriceChanged != null) //make sure there is subscriber 
     {
-      OnPriceChanged(this,oldPrice);  // publishing event 
+      OnPriceChanged(this,oldPrice);  // Publish or raise the event by invoking the event
     }
   }
      }
