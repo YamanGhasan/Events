@@ -48,7 +48,7 @@ class program //subscriber  // recive or handle the event
                 }
                 Console.WriteLine($"{stock.Name}: ${stock.Price} - {result}");
         }
-      Console.ReadLine();
+      Console.ReadLine();  // The program execution will pause at this line until the user enters a line of text and presses Enter.
 }
   
   
