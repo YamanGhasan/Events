@@ -15,9 +15,10 @@ class program //subscriber  // recive or handle the event
           // Subscribe to the OnPriceChanged event
           // When the OnPriceChanged event of the 'stock' object is raised, the 'Stock_OnPriceChanged' method  will be called to handle the event.
           stock.OnPriceChanged += Stock_OnPriceChanged;  
+           
             stock.changeStockPriceBy(0.05m);
             stock.changeStockPriceBy(-0.02m);
-           stock.ChangeStockPriceBy(0.00m);
+            stock.ChangeStockPriceBy(0.00m);
             stock.OnPriceChanged -= Stock_OnPriceChanged; //     unsubscribe from the OnPriceChanged event
            
           // console.writeline($"Price before changing : ${stock.Price} ");
@@ -47,6 +48,7 @@ class program //subscriber  // recive or handle the event
                 }
                 Console.WriteLine($"{stock.Name}: ${stock.Price} - {result}");
         }
+      Console.ReadLine();
 }
   
   
