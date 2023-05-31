@@ -45,6 +45,7 @@ namespace events
 
     public delegate void stockPriceChangeHandler(Stock stock, decimal oldPrice); // Delegate for handling stock price changes
 
+    
     public class Stock // Publisher that raises the event
     {
         private string _name;
@@ -52,13 +53,13 @@ namespace events
 
         public event stockPriceChangeHandler OnPriceChanged; // Event triggered when the stock price changes
 
-        public string Name => this.name; // Get property Name
+        public string Name => this._name; // Get property Name
 
-        public decimal Price { get => this.price; set => this.price = value; } // Setter & getter for price
+        public decimal Price { get => this._price; set => this._price = value; } // Setter & getter for price
 
         public Stock(string stockname)
         {
-            this.name = stockname; // The constructor initializes the name property with the value during object creation
+            this._name = stockname; // The constructor initializes the name property with the value during object creation
         }
 
         public void ChangeStockPriceBy(decimal percent)
