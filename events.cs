@@ -47,8 +47,8 @@ namespace events
 
     public class Stock // Publisher that raises the event
     {
-        private string name;
-        private decimal price;
+        private string _name;
+        private decimal _price;
 
         public event stockPriceChangeHandler OnPriceChanged; // Event triggered when the stock price changes
 
