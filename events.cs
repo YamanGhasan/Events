@@ -25,6 +25,7 @@ namespace events
          //it is the method that gets called when the OnPriceChanged event is raised
         {
             string result = "";
+            
             if (stock.Price > oldPrice)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
