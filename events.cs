@@ -49,6 +49,7 @@ namespace events
     public delegate void stockPriceChangeHandler(Stock stock, decimal oldPrice); // Delegate for handling stock price changes
 
     
+    
     public class Stock // Publisher that raises the event
     {
         private string _name;
