@@ -6,7 +6,6 @@ using System;
 
 
 
-
 namespace events
 {
     class Program // Subscriber - receives or handles the event
