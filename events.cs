@@ -9,7 +9,7 @@ namespace events
 {
     class Program // Subscriber - receives or handles the event
     {
-        static void Main( string[]   args)
+        static void Main( string[]    args)
         {
             var stock = new Stock("Amazon"); // Creating a new Stock object with the name "Amazon"
             stock.Price = 100;
