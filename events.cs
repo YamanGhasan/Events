@@ -11,7 +11,7 @@ namespace events
     {
         static void Main( string[]    args)
         {
-            var stock = new Stock("Amazon"); // Creating a new Stock object with the name "Amazon"
+            var stock = new Stock("Amazon");  // Creating a new Stock object with the name "Amazon"
             stock.Price = 100;
 
             // Subscribe to the OnPriceChanged event
