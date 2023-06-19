@@ -7,7 +7,7 @@ using System;
 
 namespace events
 {
-    class Program // Subscriber - receives or handles the event
+    class Program // Subscriber - receives or handles the event 
     {
         static void Main( string[]    args)
         {
